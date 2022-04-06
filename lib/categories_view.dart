@@ -33,17 +33,19 @@ class _CategoriesViewState extends State<CategoriesView> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      shrinkWrap: true,
+      shrinkWrap: false,
+      // cacheExtent: 100,
+      // itemExtent: 400,
       itemCount: categories.length,
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryWallsPage(selectedCategoryName: categories.elementAt(index))));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryWallsPage(selectedCategoryName: categories.elementAt(index), snapshotR: widget.snapshotW,)));
           },
           child: Container(
             margin: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-            // width: 200,
-            // height: 200,
+            width: 200,
+            height: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(32),
                 image: DecorationImage(
