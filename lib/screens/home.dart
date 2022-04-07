@@ -1,10 +1,10 @@
 import 'dart:async';
-
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:wall/categories_view.dart';
-import 'package:wall/wall_api.dart';
-import 'package:wall/wall_model.dart';
+
+import 'package:wall/services/wall_api.dart';
+import 'package:wall/models/wall_model.dart';
+
+import 'categories_view.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);

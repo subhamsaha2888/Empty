@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wall/category_walls_page.dart';
-import 'package:wall/wall_model.dart';
+import 'package:wall/screens/category_walls_page.dart';
+import 'package:wall/models/wall_model.dart';
 
 class CategoriesView extends StatefulWidget {
   final AsyncSnapshot<List<WallModel>> snapshotW;

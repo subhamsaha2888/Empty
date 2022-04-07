@@ -2,7 +2,7 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
-import 'package:wall/wall_model.dart';
+import 'package:wall/models/wall_model.dart';
 
 class WallApi {
   static Future<List<WallModel>> getPhotos() async {
